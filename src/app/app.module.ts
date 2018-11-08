@@ -8,6 +8,8 @@ import { AboutComponent } from './about/about.component';
 import { ServiceComponent } from './service/service.component';
 import { WorkComponent } from './work/work.component';
 import { ContactComponent } from './contact/contact.component';
+import { HeadComponent } from './head/head.component';
+import { FootComponent } from './foot/foot.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { ContactComponent } from './contact/contact.component';
     AboutComponent,
     ServiceComponent,
     WorkComponent,
-    ContactComponent
+    ContactComponent,
+    HeadComponent,
+    FootComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +31,7 @@ RouterModule.forRoot([
   {path:'service',component:ServiceComponent},
   {path:'contact',component:ContactComponent},
   {path:'work',component:WorkComponent},
-  
+  {path:'',component:HomeComponent},
 ])
 
   ],
